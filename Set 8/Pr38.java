@@ -91,7 +91,6 @@ Stack stack=new Stack();
                     break;
 
             }
-            
             System.out.println("");
             if(ch==7)
             break;
