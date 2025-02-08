@@ -21,7 +21,6 @@ class SumTask implements Runnable {
         result[index] = sum;
     }
 }
-
 public class Pr33{
     public static void main(String[] args) {
         if (args.length < 2) {
@@ -33,7 +32,6 @@ public class Pr33{
         int numThreads = Integer.parseInt(args[1]);
 
         int[] result = new int[numThreads];
-
         int range = N / numThreads;
         int remainder = N % numThreads;
 
@@ -42,7 +40,7 @@ public class Pr33{
         int start = 1;
         for (int i = 0; i < numThreads; i++) {
             int end = start + range - 1;
-
+         
             if (i == numThreads - 1) {
                 end += remainder;
             }
@@ -52,7 +50,6 @@ public class Pr33{
 
             start = end + 1;
         }
-
         try {
             for (Thread thread : threads) {
                 thread.join();

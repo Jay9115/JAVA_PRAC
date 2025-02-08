@@ -5,12 +5,10 @@ import java.util.*;
 class Stack {
 
     ArrayList<Integer> Stack = new ArrayList<Integer>();
-
     public void push(int data) {
         Stack.add(data);
         System.out.println("Data added succesfully !");
     }
-
     public void pop() {
         if (!isempty()) {
             Stack.remove(Stack.size() - 1);

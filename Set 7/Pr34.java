@@ -36,12 +36,10 @@ class Thread2 extends Thread {
 
 class Thread3 extends Thread {
     private int n;
-
     Thread3(int n) {
         this.n = n;
         setName("OddThread"); // Set a meaningful name
     }
-
     public void run() {
         System.out.println(getName() + ": Cube of " + n + " is " + (n * n * n));
     }

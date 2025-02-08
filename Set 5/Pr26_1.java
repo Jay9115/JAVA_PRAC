@@ -1,15 +1,10 @@
-
-
-
 class MyException extends Exception {
     public MyException() {
         System.out.println("Exepction created by user");
     }
 }
-
 public class Pr26_1 {
-
-    static void checkValue(int value) throws MyException {
+    static void checkValue(int value) throws Exception {
         if (value > 10) {
             throw new MyException();
         }
@@ -19,11 +14,10 @@ public class Pr26_1 {
         try {
             checkValue(5); 
             checkValue(15);
-
-        } catch (MyException e) {
-            System.out.println("Caught exception:"+e.getMessage());
+            
+        } catch (Exception e) {
+          e.printStackTrace();
         }
-
         System.out.println("23DCS076 Jay Patel");
     }    
 }

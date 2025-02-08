@@ -4,14 +4,13 @@ class SharedBuffer {
 
     public synchronized void produce() throws InterruptedException {
         if (isProduced) {
-            return;  // If an item is already produced, do nothing
+            return;  //item is already produced, do nothing
         }
         item = (int) (Math.random() * 100); // Produce a random item
         System.out.println("Produced: " + item);
         isProduced = true; // Mark the item as produced
         notify(); // Notify the consumer that the item is ready
     }
-
     public synchronized void consume() throws InterruptedException {
         if (!isProduced) {
             return;  // If no item is produced, do nothing

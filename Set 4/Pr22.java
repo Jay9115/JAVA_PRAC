@@ -1,10 +1,8 @@
 interface AdvancedAritmetic {
-
     int divisor_sum(int n);
 }
 
 class MyCalculator implements AdvancedAritmetic {
-
     public int divisor_sum(int n) {
         int sum = 0;
         if (n <= 1000) {

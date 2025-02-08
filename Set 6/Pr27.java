@@ -2,8 +2,7 @@
 import java.io.*;
 
 public class Pr27 {
-
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args)  {
         if (args.length == 0) {
             System.out.println("No file Found!");
         } else {
@@ -12,7 +11,7 @@ public class Pr27 {
                     BufferedReader f = new BufferedReader(new FileReader(args[i]));
                     String j;
                     int count = 0;
-                    while ((j = f.readLine()) != null) {
+                    while ((f.readLine()) != null) {
                         count++;
                     }
                     System.out.println("File name is : " + args[i] + " and Number of lines are : " + count);

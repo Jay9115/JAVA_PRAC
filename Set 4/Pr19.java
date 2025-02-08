@@ -53,5 +53,4 @@ public class Pr19 {
         System.out.println("23DCS076 Jay Patel");
 
     }
-    
 }

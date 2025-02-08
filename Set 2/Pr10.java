@@ -11,7 +11,6 @@ public class Pr10 {
         {
             System.out.print(s.charAt(i));
         }
-
         System.out.println();
         char[] temp=s.toCharArray();
         Arrays.sort(temp);

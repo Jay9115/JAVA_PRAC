@@ -6,9 +6,7 @@ class Myrunnable implements Runnable {
         System.out.println("Hello World!");
     }
 }
-
 public class Pr32_2 {
-
     public static void main(String[] args) {
         Myrunnable r = new Myrunnable();
         Thread t = new Thread(r);

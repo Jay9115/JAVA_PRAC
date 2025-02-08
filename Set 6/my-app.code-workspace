@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"path": "F:/rect/my-app"
+		},
+		{
+			"path": "../.."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"iostream": "cpp"
+		}
+	}
+}

@@ -2,7 +2,6 @@
 import java.util.*;
 
 public class Pr40 {
-
     public static void main(String[] args) {
         Map<String, Integer> wordMap = new TreeMap<>();
         Scanner scanner = new Scanner(System.in);

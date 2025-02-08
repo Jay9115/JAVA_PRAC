@@ -1,15 +1,16 @@
 
 import java.io.*;
+import java.util.Scanner;
 
 public class Pr31 {
 
     public static void main(String[] args) {
-        BufferedReader consoleReader = new BufferedReader(new InputStreamReader(System.in));
         String fileName = "File1.txt";
         try (BufferedWriter fileWriter = new BufferedWriter(new FileWriter(fileName))) {
             System.out.println("Enter text (type 'exit' to finish):");
             String input;
-            while (!(input = consoleReader.readLine()).equalsIgnoreCase("exit")) {
+            Scanner sc=new Scanner(System.in);
+            while (!(input = sc.nextLine()).equalsIgnoreCase("exit")) {
                 fileWriter.write(input);
                 fileWriter.newLine();
             }

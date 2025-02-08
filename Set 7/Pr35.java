@@ -2,8 +2,8 @@ class Thread1 extends Thread {
     public void run() {
         int i=0,n = 0; 
         while (i<7) {
-            n++; 
-            System.out.println(n); 
+            
+            System.out.println(i); 
             try {
                 Thread.sleep(1000); // Sleep for 1 second
             } catch (InterruptedException e) {

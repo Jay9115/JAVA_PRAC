@@ -4,14 +4,13 @@ import java.util.*;
 public class Pr7 {
     static void front_times(String s,int n)
     {
-String s1=s.substring(0,3);
+String s1=s.substring(1);
         for(int i=0;i<n;i++)
         {
             System.out.print(s1);
         }
         System.out.println();
     }
-
     
     public static void main(String[] args)
     {
